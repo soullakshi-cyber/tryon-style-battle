@@ -1,0 +1,47 @@
+{
+  "expo": {
+    "name": "TRYON Style Battle",
+    "slug": "tryon-style-battle",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "dark",
+    "splash": {
+      "image": "./assets/splash-icon.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#0C0D0F"
+    },
+    "ios": {
+      "supportsTablet": false,
+      "bundleIdentifier": "com.tryon.stylebattle",
+      "infoPlist": {
+        "NSCameraUsageDescription": "TRYON needs camera access so you can take a photo for virtual try-on.",
+        "NSPhotoLibraryUsageDescription": "TRYON needs photo library access so you can upload your photo and outfit images.",
+        "NSPhotoLibraryAddUsageDescription": "TRYON can save looks you choose to keep."
+      }
+    },
+    "android": {
+      "adaptiveIcon": {
+        "backgroundColor": "#0C0D0F",
+        "foregroundImage": "./assets/android-icon-foreground.png",
+        "backgroundImage": "./assets/android-icon-background.png",
+        "monochromeImage": "./assets/android-icon-monochrome.png"
+      },
+      "package": "com.tryon.stylebattle",
+      "permissions": ["CAMERA", "READ_MEDIA_IMAGES"]
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "plugins": [
+      "expo-font",
+      [
+        "expo-image-picker",
+        {
+          "photosPermission": "Allow TRYON to access your photos for try-on and Style Battles.",
+          "cameraPermission": "Allow TRYON to use your camera for try-on photos."
+        }
+      ]
+    ]
+  }
+}
