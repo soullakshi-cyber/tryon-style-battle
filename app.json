@@ -28,6 +28,7 @@
         "monochromeImage": "./assets/android-icon-monochrome.png"
       },
       "package": "com.tryon.stylebattle",
+      "versionCode": 1,
       "permissions": ["CAMERA", "READ_MEDIA_IMAGES"]
     },
     "web": {

@@ -20,6 +20,22 @@ npm run web      # browser preview
 npm start       # Expo Go / simulators
 ```
 
+## Android APK
+
+A signed release APK is produced with:
+
+```bash
+npx expo prebuild --platform android
+cd android && ./gradlew assembleRelease
+```
+
+Installable build (arm64-v8a + armeabi-v7a):
+
+- Package: `com.tryon.stylebattle`
+- Output: `dist/TRYON-Style-Battle.apk` (also `/agent/TRYON-Style-Battle.apk` in the cloud agent)
+
+On your phone: enable **Install unknown apps**, then open the APK. Replace `credentials/tryon-release.keystore` before any Play Store publish.
+
 ## Brand
 
 | Token | Value |
